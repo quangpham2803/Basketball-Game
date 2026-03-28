@@ -15,7 +15,7 @@ public class MainMenuManager : MonoBehaviour
     public static float MouseSensitivity = 2f;
 
     [Header("Game Scene")]
-    [SerializeField] private string gameSceneName = "New Scene 3";
+    [SerializeField] private string gameSceneName1 = "GamePlay";
 
     [Header("Panels")]
     [SerializeField] private GameObject mainPanel;
@@ -169,7 +169,7 @@ public class MainMenuManager : MonoBehaviour
     private void StartGame()
     {
         AudioListener.volume = MasterVolume;
-        SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadScene(gameSceneName1);
     }
 
     private void QuitGame()
